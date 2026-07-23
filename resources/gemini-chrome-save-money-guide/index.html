@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gemini in Chrome: The Everyday Workflow Guide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+    :root{--bg:#09090b;--panel:#151517;--line:#2b2b2f;--gold:#c9a961;--cream:#f5f5f2;--body:#c8c8cd;--muted:#929299;--orange:#f2791a;--green:#64c38a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--body);font-family:Inter,sans-serif}.wrap{width:min(100% - 36px,680px);margin:auto}
+    header{padding:22px 0 16px}.brand{color:var(--cream);font:800 17px/1 DM Sans,sans-serif;letter-spacing:1px}.brand span{margin-left:6px;padding:3px 8px;border-radius:6px;background:var(--orange);color:#09090b}
+    .hero{padding:44px 0 38px;background:radial-gradient(circle at 50% 0,rgba(201,169,97,.18),transparent 64%)}.kicker,.label{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{margin:14px 0;color:var(--cream);font:700 clamp(38px,10vw,58px)/1.03 DM Sans,sans-serif;letter-spacing:-1.8px}.lede{font-size:18px;line-height:1.55;margin:0;max-width:590px}.proof{margin-top:24px;padding:16px 18px;border:1px solid rgba(201,169,97,.34);border-radius:10px;background:var(--panel);font-size:14px;line-height:1.55}.proof b{color:#eadcb8}
+    nav{padding:25px 0}.nav-row{display:flex;gap:12px;padding:14px 2px;border-top:1px solid var(--line);color:var(--cream);text-decoration:none}.nav-row:first-of-type{margin-top:10px}.nav-num{color:var(--gold);font-weight:700;min-width:25px}.nav-name{flex:1}.arrow{color:var(--gold)}
+    section{padding:38px 0;border-top:1px solid var(--line)}h2{margin:9px 0 12px;color:var(--cream);font:700 30px/1.14 DM Sans,sans-serif;letter-spacing:-.6px}h3{margin:8px 0 10px;color:var(--cream);font:700 22px/1.18 DM Sans,sans-serif}p,li{font-size:15.5px;line-height:1.6}.note,.warning{padding:15px 17px;border-radius:9px;background:var(--panel);border-left:3px solid var(--gold);font-size:14px;line-height:1.55}.warning{border-left-color:var(--orange);background:#1b1713}
+    .steps{margin-top:24px}.step{margin:0 0 26px}.step-head{display:flex;align-items:center;gap:12px;margin-bottom:11px}.step-num{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:var(--orange);color:#111;font-weight:800;font-size:12px}.step-title{color:var(--cream);font-weight:700}.official{margin:12px 0 7px;border:1px solid #34343a;border-radius:11px;overflow:hidden;background:#fff}.official img{display:block;width:100%;height:auto}.caption{font-size:11px;line-height:1.45;color:var(--muted)}.caption a{color:var(--gold)}
+    .workflow{margin-top:22px;padding:22px 19px;border:1px solid rgba(201,169,97,.32);border-radius:12px;background:var(--panel)}.situation{color:var(--body);font-size:14px;line-height:1.55}.tabs{margin:14px 0;color:var(--cream);font-size:13px;line-height:1.5}.prompt{margin-top:14px;padding:16px;border-radius:9px;background:#0c0c0f;color:#eadcb8;font-size:14px;line-height:1.57;white-space:pre-line}.copy{margin-top:12px;border:0;border-radius:8px;background:var(--gold);color:#111;padding:10px 13px;font-weight:700;cursor:pointer}.verify{margin-top:15px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.5}.verify b{color:var(--cream)}
+    .check{display:grid;grid-template-columns:22px 1fr;gap:10px;margin:13px 0}.check-mark{color:var(--green);font-weight:800}.sources a{color:var(--gold)}footer{padding:24px 0 36px;color:#68686e;font-size:11px;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <header class="wrap"><div class="brand">ARKIV <span>AI</span></div></header>
+  <div class="hero"><div class="wrap">
+    <div class="kicker">Setup + six practical workflows</div>
+    <h1>Gemini in Chrome:<br>The Everyday Workflow Guide</h1>
+    <p class="lede">Set it up once. Then use your open tabs to handle everyday tasks faster.</p>
+    <div class="proof"><b>What it can do:</b> Gemini in Chrome can work with the current page and compare information across up to 10 shared tabs. Important details should still be checked on the original pages.</div>
+  </div></div>
+  <nav class="wrap">
+    <div class="label">Inside the guide</div>
+    <a class="nav-row" href="#setup"><span class="nav-num">01</span><span class="nav-name">Setup Gemini with your tabs</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#workflows"><span class="nav-num">02</span><span class="nav-name">Six everyday workflows</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#privacy"><span class="nav-num">03</span><span class="nav-name">Privacy and verification</span><span class="arrow">→</span></a>
+  </nav>
+  <main class="wrap">
+    <section id="setup">
+      <div class="label">Part 01 · Setup</div>
+      <h2>Use Gemini with your open tabs</h2>
+      <p>Open the pages involved in one task, then share only the tabs Gemini needs.</p>
+      <div class="steps">
+        <article class="step"><div class="step-head"><span class="step-num">01</span><span class="step-title">Open Gemini in Chrome</span></div><p>Update Chrome, sign in, open the first useful webpage, then click <b>Ask Gemini</b> at the top of the browser. Follow the onscreen opt-in instructions the first time.</p>
+          <figure class="official"><img src="assets/google-official-open-gemini.png" alt="Official Google demonstration showing Gemini open beside a Chrome webpage"></figure><div class="caption">Official Google demonstration. Source: <a href="https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/">Google Chrome product blog</a>.</div>
+        </article>
+        <article class="step"><div class="step-head"><span class="step-num">02</span><span class="step-title">Add the relevant tabs</span></div><p>Open the other pages you need. In Gemini, click <b>Add tabs</b>, or type <b>@</b>, and select up to 10 open tabs. Shared tabs display a check mark.</p>
+          <figure class="official"><img src="assets/google-official-share-tabs.png" alt="Official Google demonstration showing multiple tabs selected in Gemini in Chrome"></figure><div class="caption">Official Google demonstration. Source: <a href="https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/">Google Chrome product blog</a>.</div>
+        </article>
+        <article class="step"><div class="step-head"><span class="step-num">03</span><span class="step-title">Give Gemini a structured task</span></div><p>Use one of the prompts below. Replace everything inside brackets and ask Gemini to identify the source tab for every important claim.</p>
+          <figure class="official"><img src="assets/google-official-enter-prompt.png" alt="Official Google demonstration showing a prompt entered into Gemini in Chrome"></figure><div class="caption">Official Google demonstration. Source: <a href="https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/">Google Chrome product blog</a>.</div>
+        </article>
+        <article class="step"><div class="step-head"><span class="step-num">04</span><span class="step-title">Check the answer at its source</span></div><p>Use Gemini’s answer to narrow the work, then reopen the original tabs and verify decisive prices, dates, policies and conditions.</p>
+          <figure class="official"><img src="assets/google-official-answer.png" alt="Official Google demonstration showing Gemini answering from several Chrome tabs"></figure><div class="caption">Official Google demonstration. Source: <a href="https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/">Google Chrome product blog</a>.</div>
+        </article>
+      </div>
+      <div class="note"><b>Can’t see Ask Gemini?</b> Google is rolling the feature out gradually. You need an eligible signed-in account, a supported region, device and language, the latest Chrome, and a normal window rather than Incognito.</div>
+    </section>
+
+    <section id="workflows"><div class="label">Part 02 · Workflows</div><h2>Six useful jobs for your open tabs</h2><p>Each workflow begins with a familiar situation and ends with details you should verify yourself.</p>
+
+      <article class="workflow"><div class="label">Workflow 01</div><h3>Compare before buying</h3><p class="situation">You have several product tabs open and every option claims to be the best.</p><div class="tabs"><b>Open:</b> product pages, delivery information, warranty terms and return policies.</div><div class="prompt" id="p1">Compare the products in these tabs for someone who needs [describe your normal use].
+
+Create a table covering:
+- Total price, including delivery and required accessories
+- Important differences
+- Warranty and return policy
+- Recurring or hidden costs
+- Repeated complaints found in the shared pages
+
+Recommend the best overall option, not simply the cheapest one. Cite the supporting tab for every price and important claim. Mark missing information as unknown.</div><button class="copy" data-copy="p1">Copy prompt</button><div class="verify"><b>Verify yourself:</b> checkout price, seller identity, delivery date, warranty exclusions and return window.</div></article>
+
+      <article class="workflow"><div class="label">Workflow 02</div><h3>Plan a trip across multiple tabs</h3><p class="situation">Your flight, hotel and activity options are spread across different pages.</p><div class="tabs"><b>Open:</b> flights, hotels, transport, attractions and cancellation policies.</div><div class="prompt" id="p2">Use these tabs to create a practical trip plan for [number of people] travelling to [destination] from [dates].
+
+Include:
+- Flight and hotel costs
+- Baggage, taxes and additional fees
+- Airport and local transport
+- Travel time between activities
+- Cancellation conditions
+- Any cost or booking detail that is still missing
+
+Present a day-by-day itinerary and an estimated total. Cite the source tab for every price and schedule.</div><button class="copy" data-copy="p2">Copy prompt</button><div class="verify"><b>Verify yourself:</b> currency, baggage allowance, local taxes, transfer time and cancellation deadlines.</div></article>
+
+      <article class="workflow"><div class="label">Workflow 03</div><h3>Understand a subscription</h3><p class="situation">The introductory price looks attractive, but the conditions are scattered across several pages.</p><div class="tabs"><b>Open:</b> pricing, plan comparison, features, terms and cancellation pages.</div><div class="prompt" id="p3">Compare these subscription plans based on what I will actually pay during the first year and after the introductory period.
+
+I mainly need it for [describe your use].
+
+Show:
+- Monthly and annual cost
+- Price after promotions end
+- Contract length
+- Cancellation requirements
+- Important limitations
+- Features I am unlikely to need
+
+Recommend the most sensible plan and cite the relevant tab for every cost and condition.</div><button class="copy" data-copy="p3">Copy prompt</button><div class="verify"><b>Verify yourself:</b> renewal date, trial conversion, annual commitment and cancellation method.</div></article>
+
+      <article class="workflow"><div class="label">Workflow 04</div><h3>Turn recipes into one meal plan</h3><p class="situation">You found several recipes but need one realistic plan and shopping list.</p><div class="tabs"><b>Open:</b> recipe pages and, optionally, a supermarket page.</div><div class="prompt" id="p4">Use these recipes to create a [number]-day meal plan for [number of people].
+
+Our preferences or restrictions are: [add details].
+Ingredients we already have: [add ingredients].
+
+Create:
+- A simple daily meal plan
+- One combined shopping list grouped by category
+- Quantities adjusted for the number of people
+- Practical ingredient substitutions
+- A plan for reusing leftovers
+
+Cite the recipe tab used for each meal.</div><button class="copy" data-copy="p4">Copy prompt</button><div class="verify"><b>Verify yourself:</b> allergies, serving sizes, cooking times and safe food storage.</div></article>
+
+      <article class="workflow"><div class="label">Workflow 05</div><h3>Understand a long document</h3><p class="situation">You need the important information without reading every paragraph first.</p><div class="tabs"><b>Open:</b> the article, report, policy or terms page.</div><div class="prompt" id="p5">Explain this document in plain language.
+
+Organise the answer into:
+- What this document is about
+- The five most important points
+- Anything that affects me directly
+- Dates, costs, obligations or deadlines
+- Actions I may need to take
+- Statements that are unclear or require confirmation
+
+Quote only short essential phrases and point me to the relevant section of the page for each important claim.</div><button class="copy" data-copy="p5">Copy prompt</button><div class="verify"><b>Verify yourself:</b> deadlines, legal or financial obligations, eligibility and the original wording of decisive clauses.</div></article>
+
+      <article class="workflow"><div class="label">Workflow 06</div><h3>Make sense of several reviews</h3><p class="situation">Reviews disagree and you cannot tell which complaints actually matter.</p><div class="tabs"><b>Open:</b> the official product page and several independent reviews.</div><div class="prompt" id="p6">Compare the official product claims with the reviews in these tabs.
+
+Separate the findings into:
+- Strengths mentioned repeatedly
+- Problems mentioned repeatedly
+- Isolated complaints
+- Claims supported by testing
+- Marketing claims that were not independently verified
+- The type of person this product suits
+- The type of person who should avoid it
+
+Do not treat every opinion as equally reliable. Cite the supporting tab for every conclusion and explain any disagreement between reviewers.</div><button class="copy" data-copy="p6">Copy prompt</button><div class="verify"><b>Verify yourself:</b> review date, tested model, sponsorship disclosures, regional differences and long-term ownership evidence.</div></article>
+    </section>
+
+    <section id="privacy"><div class="label">Part 03 · Before you share</div><h2>Protect your privacy and verify the result</h2><div class="warning"><b>Your current tab may be shared by default.</b> Review the shared-tab list before every prompt.</div>
+      <div class="check"><span class="check-mark">✓</span><span>Close banking, passwords, private messages, medical information and confidential work pages.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Remove every tab Gemini does not need.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Open <b>Chrome Settings → AI innovations → Gemini in Chrome</b> to manage permissions and the default tab-sharing setting.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Confirm every decisive price, deadline, policy and condition on the original page.</span></div>
+    </section>
+    <section class="sources"><div class="label">Sources</div><h2>Official Google references</h2>
+      <p><a href="https://support.google.com/chrome/answer/16283624?hl=EN">Google Chrome Help: Use Gemini in Chrome</a></p>
+      <p><a href="https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/">Google Chrome Blog: New AI features for Chrome</a></p>
+      <p><a href="https://support.google.com/gemini/answer/17077507?hl=en">Google Gemini Help: Share specific parts of your screen</a></p>
+      <p>The screenshots are still frames extracted from Google’s official multitab demonstration. The workflows and prompts are written by ARKIV AI and are not official Google prompts.</p>
+    </section>
+  </main>
+  <footer class="wrap">ARKIV AI · The AI Record · Built in Singapore</footer>
+  <script>document.querySelectorAll('.copy').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).innerText;try{await navigator.clipboard.writeText(text);button.textContent='Copied';setTimeout(()=>button.textContent='Copy prompt',1600)}catch{button.textContent='Select and copy'}}));</script>
+</body>
+</html>
