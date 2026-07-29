@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restore Old Photos with Gemini: The Complete Guide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+    :root{--bg:#09090b;--panel:#151517;--line:#2b2b2f;--gold:#c9a961;--cream:#f5f5f2;--body:#c8c8cd;--muted:#929299;--orange:#f2791a;--green:#64c38a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--body);font-family:Inter,sans-serif}.wrap{width:min(100% - 36px,680px);margin:auto}
+    header{padding:22px 0 16px}.brand{color:var(--cream);font:800 17px/1 DM Sans,sans-serif;letter-spacing:1px}.brand span{margin-left:6px;padding:3px 8px;border-radius:6px;background:var(--orange);color:#09090b}
+    .hero{padding:44px 0 38px;background:radial-gradient(circle at 50% 0,rgba(201,169,97,.18),transparent 64%)}.kicker,.label{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{margin:14px 0;color:var(--cream);font:700 clamp(38px,10vw,58px)/1.03 DM Sans,sans-serif;letter-spacing:-1.8px}.lede{font-size:18px;line-height:1.55;margin:0;max-width:590px}.proof{margin-top:24px;padding:16px 18px;border:1px solid rgba(201,169,97,.34);border-radius:10px;background:var(--panel);font-size:14px;line-height:1.55}.proof b{color:#eadcb8}
+    nav{padding:25px 0}.nav-row{display:flex;gap:12px;padding:14px 2px;border-top:1px solid var(--line);color:var(--cream);text-decoration:none}.nav-row:first-of-type{margin-top:10px}.nav-num{color:var(--gold);font-weight:700;min-width:25px}.nav-name{flex:1}.arrow{color:var(--gold)}
+    section{padding:38px 0;border-top:1px solid var(--line)}h2{margin:9px 0 12px;color:var(--cream);font:700 30px/1.14 DM Sans,sans-serif;letter-spacing:-.6px}h3{margin:8px 0 10px;color:var(--cream);font:700 22px/1.18 DM Sans,sans-serif}p,li{font-size:15.5px;line-height:1.6}.note,.warning{padding:15px 17px;border-radius:9px;background:var(--panel);border-left:3px solid var(--gold);font-size:14px;line-height:1.55}.warning{border-left-color:var(--orange);background:#1b1713}
+    .steps{margin-top:24px}.step{margin:0 0 26px}.step-head{display:flex;align-items:center;gap:12px;margin-bottom:11px}.step-num{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:var(--orange);color:#111;font-weight:800;font-size:12px}.step-title{color:var(--cream);font-weight:700}.official{margin:12px 0 7px;border:1px solid #34343a;border-radius:11px;overflow:hidden;background:#fff}.official img{display:block;width:100%;height:auto}.caption{font-size:11px;line-height:1.45;color:var(--muted)}.caption a{color:var(--gold)}
+    .compare{margin:14px 0 7px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.compare figure{margin:0;border:1px solid #34343a;border-radius:11px;overflow:hidden;background:#000}.compare img{display:block;width:100%;height:auto}.compare figcaption{padding:7px 10px;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);background:#000}
+    .prompt{margin-top:14px;padding:16px;border-radius:9px;background:#0c0c0f;color:#eadcb8;font-size:14px;line-height:1.57;white-space:pre-line}.copy{margin-top:12px;border:0;border-radius:8px;background:var(--gold);color:#111;padding:10px 13px;font-weight:700;cursor:pointer}
+    .check{display:grid;grid-template-columns:22px 1fr;gap:10px;margin:13px 0}.check-mark{color:var(--green);font-weight:800}.sources a{color:var(--gold)}footer{padding:24px 0 36px;color:#68686e;font-size:11px;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <header class="wrap"><div class="brand">ARKIV <span>AI</span></div></header>
+  <div class="hero"><div class="wrap">
+    <div class="kicker">Photo restoration + colorization</div>
+    <h1>Bring your old<br>photos back to life</h1>
+    <p class="lede">A step-by-step guide to restoring damaged, faded, or low-resolution photos with Gemini, the same model behind the viral "Nano Banana" trend.</p>
+    <div class="proof"><b>What it can do:</b> remove scratches, dust, and fading; sharpen detail; increase resolution; and colorize black-and-white photos. It cannot recover detail that is completely destroyed, only make a plausible reconstruction of it (see Part 03).</div>
+  </div></div>
+  <nav class="wrap">
+    <div class="label">Inside the guide</div>
+    <a class="nav-row" href="#restore"><span class="nav-num">01</span><span class="nav-name">Restore your first photo</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#better"><span class="nav-num">02</span><span class="nav-name">Get better results</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#before-you-share"><span class="nav-num">03</span><span class="nav-name">Limits, privacy, and eligibility</span><span class="arrow">→</span></a>
+  </nav>
+  <main class="wrap">
+    <section id="restore">
+      <div class="label">Part 01 · Restore a photo</div>
+      <h2>From damaged to shareable</h2>
+      <p>This is a real test we ran for this guide: a public-domain 1888-1889 photograph, badly damaged by scratches and emulsion loss, restored end to end with the exact steps and prompt below.</p>
+      <div class="compare">
+        <figure><img src="assets/before.jpg" alt="Original damaged photograph with heavy scratches and emulsion loss"><figcaption>Before</figcaption></figure>
+        <figure><img src="assets/after.jpg" alt="The same photograph after Gemini restoration, damage removed"><figcaption>After</figcaption></figure>
+      </div>
+      <div class="caption">Source photo: a public-domain group photograph, "Gruppebilde med blant annet Bjørnstjerne Bjørnson, sterkt skadet" (unknown date, late 1800s), National Library of Norway, via <a href="https://commons.wikimedia.org/wiki/Category:Scratched_photographs">Wikimedia Commons</a>. Restoration run by ARKIV AI using the Gemini image API for this guide.</div>
+
+      <div class="steps">
+        <article class="step"><div class="step-head"><span class="step-num">01</span><span class="step-title">Go to Gemini and sign in</span></div><p>Open <b>gemini.google.com</b> (or the Gemini app) and sign in. You must be 18 or older to edit images; under-18 accounts can only generate new images, not edit uploaded ones.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">02</span><span class="step-title">Upload your photo</span></div><p>Start a new chat and use the attach button to upload the photo you want to restore. You can also open <b>Sidebar &gt; Library</b>, pick an image, and click <b>Chat</b> beneath it.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">03</span><span class="step-title">Use this prompt</span></div><p>Paste the prompt below, then click <b>Submit</b>.</p>
+          <div class="prompt" id="p1">Restore this old, faded, low-resolution family photograph. Remove scratches, dust, noise and fading. Sharpen and increase detail and resolution. Keep every face, pose, and object exactly as they are; do not invent or change any person, clothing, or background element. Photorealistic result, not a painting or illustration.</div>
+          <button class="copy" data-copy="p1">Copy prompt</button>
+        </article>
+        <article class="step"><div class="step-head"><span class="step-num">04</span><span class="step-title">Review and re-run if needed</span></div><p>If the first result over-smooths a face or misses a damaged area, reply and ask Gemini to try again, or to focus on a specific part of the photo.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">05</span><span class="step-title">Download it</span></div><p>Hover over the finished image and click <b>Download full size</b>.</p></article>
+      </div>
+      <div class="note"><b>Heads up:</b> every image Gemini generates or edits carries a small visible watermark plus Google's invisible SynthID marker, so restored photos are still labeled as AI-processed.</div>
+    </section>
+
+    <section id="better"><div class="label">Part 02 · Get better results</div><h2>Colorizing, and getting a more accurate result</h2>
+      <p>For black-and-white photos, add a colorizing request to the same prompt:</p>
+      <div class="prompt" id="p2">Also colorize this photo with natural, period-accurate tones. If I tell you the real colors of anything in the photo, use those exactly instead of guessing.</div>
+      <button class="copy" data-copy="p2">Copy prompt</button>
+      <p style="margin-top:16px">If you know a real detail Gemini can't see from a damaged or black-and-white photo, e.g. "the dress was navy blue" or "the car was maroon", say so directly in the chat. Gemini will use it instead of guessing.</p>
+    </section>
+
+    <section id="before-you-share"><div class="label">Part 03 · Before you rely on it</div><h2>What this can and can't actually prove</h2>
+      <div class="warning"><b>Restoration vs. reconstruction.</b> For fading, scratches, dust, and noise, Gemini is recovering detail that's genuinely still in the photo. For an area that's completely destroyed or obscured, like the faces under heavy damage in the example above, Gemini is generating a <b>plausible</b> result, not proof of what was actually there. Treat a fully reconstructed face or object as a creative best-guess, never as forensic evidence of the original.</div>
+      <div class="check"><span class="check-mark">✓</span><span>You must be signed in and 18 or older to edit an uploaded image; 13+ can generate new images only.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Don't upload a photo of someone else without asking them first, per Google's own Terms of Service on copyright and privacy.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Use your own discretion before you rely on, publish, or share what Gemini produces.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>For a photo with real historical or monetary value, this is a fun first pass, not a substitute for a professional archival restorer.</span></div>
+    </section>
+    <section class="sources"><div class="label">Sources</div><h2>Official Google references</h2>
+      <p><a href="https://support.google.com/gemini/answer/14286560">Google Gemini Apps Help: Generate &amp; edit images with Gemini Apps</a></p>
+      <p><a href="https://blog.google/products/gemini/updated-image-editing-model/">Google blog: Nano Banana, image editing in Gemini gets a major upgrade</a></p>
+      <p>The before/after demo above is an original restoration ARKIV AI ran for this guide, not a Google marketing image. The prompts are written by ARKIV AI and are not official Google prompts.</p>
+    </section>
+  </main>
+  <footer class="wrap">ARKIV AI · The AI Record · Built in Singapore</footer>
+  <script>document.querySelectorAll('.copy').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).innerText;try{await navigator.clipboard.writeText(text);button.textContent='Copied';setTimeout(()=>button.textContent='Copy prompt',1600)}catch{button.textContent='Select and copy'}}));</script>
+</body>
+</html>
