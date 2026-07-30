@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turn a Sketch into a Photorealistic Image: The Complete Guide</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+    :root{--bg:#09090b;--panel:#151517;--line:#2b2b2f;--gold:#c9a961;--cream:#f5f5f2;--body:#c8c8cd;--muted:#929299;--orange:#f2791a;--green:#64c38a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--body);font-family:Inter,sans-serif}.wrap{width:min(100% - 36px,680px);margin:auto}
+    header{padding:22px 0 16px}.brand{color:var(--cream);font:800 17px/1 DM Sans,sans-serif;letter-spacing:1px}.brand span{margin-left:6px;padding:3px 8px;border-radius:6px;background:var(--orange);color:#09090b}
+    .hero{padding:44px 0 38px;background:radial-gradient(circle at 50% 0,rgba(201,169,97,.18),transparent 64%)}.kicker,.label{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{margin:14px 0;color:var(--cream);font:700 clamp(38px,10vw,58px)/1.03 DM Sans,sans-serif;letter-spacing:-1.8px}.lede{font-size:18px;line-height:1.55;margin:0;max-width:590px}.proof{margin-top:24px;padding:16px 18px;border:1px solid rgba(201,169,97,.34);border-radius:10px;background:var(--panel);font-size:14px;line-height:1.55}.proof b{color:#eadcb8}
+    nav{padding:25px 0}.nav-row{display:flex;gap:12px;padding:14px 2px;border-top:1px solid var(--line);color:var(--cream);text-decoration:none}.nav-row:first-of-type{margin-top:10px}.nav-num{color:var(--gold);font-weight:700;min-width:25px}.nav-name{flex:1}.arrow{color:var(--gold)}
+    section{padding:38px 0;border-top:1px solid var(--line)}h2{margin:9px 0 12px;color:var(--cream);font:700 30px/1.14 DM Sans,sans-serif;letter-spacing:-.6px}h3{margin:8px 0 10px;color:var(--cream);font:700 22px/1.18 DM Sans,sans-serif}p,li{font-size:15.5px;line-height:1.6}.note,.warning{padding:15px 17px;border-radius:9px;background:var(--panel);border-left:3px solid var(--gold);font-size:14px;line-height:1.55}.warning{border-left-color:var(--orange);background:#1b1713}
+    .steps{margin-top:24px}.step{margin:0 0 26px}.step-head{display:flex;align-items:center;gap:12px;margin-bottom:11px}.step-num{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:var(--orange);color:#111;font-weight:800;font-size:12px}.step-title{color:var(--cream);font-weight:700}.caption{font-size:11px;line-height:1.45;color:var(--muted)}.caption a{color:var(--gold)}
+    .compare{margin:14px 0 7px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.compare figure{margin:0;border:1px solid #34343a;border-radius:11px;overflow:hidden;background:#000}.compare img{display:block;width:100%;height:auto}.compare figcaption{padding:7px 10px;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);background:#000}
+    .prompt{margin-top:14px;padding:16px;border-radius:9px;background:#0c0c0f;color:#eadcb8;font-size:14px;line-height:1.57;white-space:pre-line}.copy{margin-top:12px;border:0;border-radius:8px;background:var(--gold);color:#111;padding:10px 13px;font-weight:700;cursor:pointer}
+    .check{display:grid;grid-template-columns:22px 1fr;gap:10px;margin:13px 0}.check-mark{color:var(--green);font-weight:800}.sources a{color:var(--gold)}footer{padding:24px 0 36px;color:#68686e;font-size:11px;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <header class="wrap"><div class="brand">ARKIV <span>AI</span></div></header>
+  <div class="hero"><div class="wrap">
+    <div class="kicker">Sketch to photorealistic image</div>
+    <h1>Turn any rough<br>sketch into a photo</h1>
+    <p class="lede">A step-by-step guide to turning a hand-drawn sketch into a photorealistic image with Nano Banana Pro, Google's Gemini 3 Pro Image model.</p>
+    <div class="proof"><b>What it does:</b> Google describes the capability as "turning sketches into products or blueprints into photorealistic 3D structures", bridging "the gap between concept and creation." What it produces is a plausible photorealistic render of your drawing, not a measured or manufacturable spec (see Part 03).</div>
+  </div></div>
+  <nav class="wrap">
+    <div class="label">Inside the guide</div>
+    <a class="nav-row" href="#do-it"><span class="nav-num">01</span><span class="nav-name">Turn your first sketch into a photo</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#better"><span class="nav-num">02</span><span class="nav-name">Get a result that matches your drawing</span><span class="arrow">→</span></a>
+    <a class="nav-row" href="#limits"><span class="nav-num">03</span><span class="nav-name">Watermarks, limits, and what not to claim</span><span class="arrow">→</span></a>
+  </nav>
+  <main class="wrap">
+    <section id="do-it">
+      <div class="label">Part 01 · Do it</div>
+      <h2>From pencil lines to a product shot</h2>
+      <p>This is a real test we ran for this guide. The sketch on the left was generated as a rough graphite drawing, then handed straight back to Nano Banana Pro with the prompt in step 3. Nothing was retouched between the two images.</p>
+      <div class="compare">
+        <figure><img src="assets/before.jpg" alt="A rough graphite sketch of a mid-century armchair on sketchbook paper"><figcaption>The sketch</figcaption></figure>
+        <figure><img src="assets/after.jpg" alt="The same armchair rendered as a photorealistic product photograph, same silhouette and angle"><figcaption>The render</figcaption></figure>
+      </div>
+      <div class="caption">Both images generated by ARKIV AI with Nano Banana Pro (<b>gemini-3-pro-image</b>) via the Gemini API for this guide. Not a Google marketing image.</div>
+
+      <div class="steps">
+        <article class="step"><div class="step-head"><span class="step-num">01</span><span class="step-title">Open Gemini and pick the right mode</span></div><p>Go to <b>gemini.google.com</b> or the Gemini app. Select <b>Create images</b> with the <b>Thinking</b> model. That combination is what routes you to Nano Banana Pro. Free accounts get limited quotas and then fall back to the original Nano Banana; Google AI Plus, Pro, and Ultra get higher quotas.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">02</span><span class="step-title">Upload your sketch</span></div><p>Attach a photo of your drawing. Rough is genuinely fine, stray construction lines and smudges included. What matters is that the silhouette and the main features are readable. Shoot it flat and evenly lit so the pencil reads dark against the paper.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">03</span><span class="step-title">Use this prompt</span></div><p>Replace the bracketed part with what you drew, then submit.</p>
+          <div class="prompt" id="p1">Turn this pencil sketch into a photorealistic photograph of the same [object]. Keep the exact silhouette, proportions, camera angle and design details of the drawing. Render it as a real physical object with true materials and texture, natural studio lighting, and a soft shadow on a clean neutral surface. Same framing as the sketch. No text, no logos, no watermarks.</div>
+          <button class="copy" data-copy="p1">Copy prompt</button>
+        </article>
+        <article class="step"><div class="step-head"><span class="step-num">04</span><span class="step-title">Check the silhouette, not the polish</span></div><p>The render will almost always look good. The thing to actually check is whether it still matches <em>your</em> drawing: same outline, same angle, same details in the same places. If it drifted, say what changed and ask again rather than accepting a prettier but different object.</p></article>
+        <article class="step"><div class="step-head"><span class="step-num">05</span><span class="step-title">Download it</span></div><p>Hover the finished image and use the download option for the full-size file.</p></article>
+      </div>
+      <div class="note"><b>Naming the object helps.</b> The model renders a sketch more faithfully when it knows what it is looking at. "A mid-century walnut armchair" gets you closer than "this thing", because the lines get interpreted as wood and woven fabric instead of guessed at.</div>
+    </section>
+
+    <section id="better"><div class="label">Part 02 · Get it closer</div><h2>Making the render match the drawing</h2>
+      <h3>Tell it the materials</h3>
+      <p>A pencil sketch has no colour and no material information, so anything you do not specify is invented. If you know what the thing is made of, say so and the guessing stops.</p>
+      <div class="prompt" id="p2">The frame is walnut, the cushion is oatmeal linen, and the legs are matte black steel. Use exactly those materials and colours, and do not change the shape.</div>
+      <button class="copy" data-copy="p2">Copy prompt</button>
+      <h3 style="margin-top:26px">Show it more than one angle</h3>
+      <p>Nano Banana Pro can blend up to <b>14 images</b> and hold consistency across up to <b>5 people</b> in one composition. If you sketched your object from two or three sides, upload them together and ask for a single render that respects all of them. That is the most reliable way to stop it inventing the parts your first drawing never showed.</p>
+      <div class="prompt" id="p3">These sketches are the same object from different angles. Use all of them to build one photorealistic render of it. Where the angles disagree, follow the clearest drawing.</div>
+      <button class="copy" data-copy="p3">Copy prompt</button>
+      <h3 style="margin-top:26px">Ask for the shot, not just the object</h3>
+      <p>The model handles <b>colour grading</b>, <b>camera angles</b>, and <b>bokeh</b>, and it renders legible text in-image across multiple languages. So you can direct the photograph itself, not only the subject.</p>
+      <div class="prompt" id="p4">Shoot it as a catalogue product photo: three-quarter angle, soft window light from the left, shallow depth of field with a gently blurred background, warm neutral grade.</div>
+      <button class="copy" data-copy="p4">Copy prompt</button>
+    </section>
+
+    <section id="limits"><div class="label">Part 03 · Before you use it for anything real</div><h2>Watermarks, and what a render is not</h2>
+      <div class="warning"><b>A render is not a spec.</b> Turning a sketch photoreal makes your idea look finished; it does not make it engineered. Dimensions, joinery, load, tolerances, and material behaviour are all invented to look plausible. Treat the output as a concept visual, never as a manufacturing drawing or proof that the thing works as drawn.</div>
+      <div class="check"><span class="check-mark">✓</span><span>Every image carries Google's imperceptible <b>SynthID</b> watermark. Free and Google AI Pro tiers also get a <b>visible</b> Gemini sparkle watermark; it is removed for Google AI Ultra subscribers and for images from AI Studio.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>You can check whether an image came from Google AI by uploading it to the Gemini app and asking, which works via SynthID.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Watch for brand marks you did not ask for. Sketch something in a heavily branded category, like a sneaker, and the render can come back wearing a real company's logo. We hit this while making this guide. If you plan to publish the result, say "no logos, no brand marks" in the prompt and check the output before using it.</span></div>
+      <div class="check"><span class="check-mark">✓</span><span>Don't present a render as a photograph of something that exists. It is a picture of an idea.</span></div>
+    </section>
+
+    <section class="sources"><div class="label">Sources</div><h2>Official Google references</h2>
+      <p><a href="https://blog.google/innovation-and-ai/products/nano-banana-pro/">Google blog: Nano Banana Pro, our new state-of-the-art image generation and editing model</a></p>
+      <p>Availability, model routing ("Create images" with the "Thinking" model), quota tiers, the 14-image and 5-person limits, text rendering, colour grading, camera angle, bokeh, and the SynthID and visible-watermark rules on this page are all from that source. The sketch-to-photoreal quote is Google's own wording.</p>
+      <p>The before/after pair in Part 01 is an original generation ARKIV AI ran for this guide. The prompts are written by ARKIV AI and are not official Google prompts.</p>
+    </section>
+  </main>
+  <footer class="wrap">ARKIV AI · The AI Record · Built in Singapore</footer>
+  <script>document.querySelectorAll('.copy').forEach(button=>button.addEventListener('click',async()=>{const text=document.getElementById(button.dataset.copy).innerText;try{await navigator.clipboard.writeText(text);button.textContent='Copied';setTimeout(()=>button.textContent='Copy prompt',1600)}catch{button.textContent='Select and copy'}}));</script>
+</body>
+</html>
